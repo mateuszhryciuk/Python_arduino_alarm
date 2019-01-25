@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#wrapper {
+
+  text-align: center;
+}
+#centerdiv {
+
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+      <div id="centerdiv">
+<h1>Property alarm </h1>
+<img src="/static/house.jpeg" height="216" width="384" >
+</br>
+</br>
+<p><b>alarm on/off</b></p>
+<form method="POST">
+<button name="button" value="ON">ON</button>
+<button  name="button" value="OFF">OFF</button>
+</form>
+</br>
+<p>temp/humidity : <b>{{temp}}/{{humidity}}</b><p>
+<p>doors : <b>{{doors}}</b><p>
+<p>alarm status : <b>{{alarm}}</b><p>
+<p>manual switch : <b>{{manual}}</b><p>
+<form method="POST">
+<button  name="button" value="">refresh</button>
+</form>
+      </div>
+  </div>
+
+</body>
+</html>
