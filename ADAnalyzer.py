@@ -109,10 +109,10 @@ class ADAnalyzer:
                         self._mail.ehlo()
                         self._mail.starttls()
                         self._mail.ehlo()
-                        self._mail.login("lubnowcontrol@gmail.com","alarmlubnow13")
+                        self._mail.login("yourmail@gmail.com","password")
                         msg="Alarm !!!!"
-                        self._mail.sendmail("lubnowcontrol@gmail.com","mateusz.hryciuk@outlook.com",msg)
-                        self._mail.sendmail("lubnowcontrol@gmail.com","mat.hryciuk@gmail.com",msg)
+                        self._mail.sendmail("yourmail@gmail.com","mateusz.hryciuk@outlook.com",msg)
+                        self._mail.sendmail("yourmail@gmail.com","mat.hryciuk@gmail.com",msg)
                         #up to you how many email you want to inform
                         self._mail.quit()
                         self._message_sent = True
